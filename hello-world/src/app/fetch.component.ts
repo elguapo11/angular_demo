@@ -11,6 +11,6 @@ export class Fetch {
   }
 
 async function getWeather () {
-    
+    console.log('testing weather console')
 }
   
