@@ -12,9 +12,12 @@ export class Fetch {
 
 async function getWeather () {
     const data = await fetch('https://reqres.in/api/users/2');
-    const json = await data.json();
-    console.log(json.data.email);
-    console.log('testing weather console')
+    const response = await data.json();
+    console.log(response.data.email);
+    setTimeout( ()=>
+        console.log('this is benny again after 2 seconds'), 2000)
+    console.log('testing dumb api example console')
+   
 }
 
 getWeather()
