@@ -8,19 +8,6 @@ import { Component } from '@angular/core';
 export class Fetch {
   fetch = 'Benny has a site';
 }
-async function getWeather() {
-  try {
-    const data = await fetch('https://reqres.in/api/users/2');
-    const response = await data.json();
-    console.log(response.data.email);
-    setTimeout(() => console.log('this is benny again after 4 seconds'), 4000);
-    console.log('testing dumb api example console');
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-getWeather();
 
 const nums = [1, 2, 4, 5, 6, 7, 8, 9];
 
