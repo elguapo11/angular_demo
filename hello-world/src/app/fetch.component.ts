@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './fetch.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class Fetch {
-  fetch = 'Benny has a site';
+export class Fetch implements OnInit {
+  fetch: string = 'Benny has a site';
+  constructor() {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.fetch = 'new message!';
+    }, 0); // 1000 milliseconds = 1 second
+  }
 }
 
 const nums = [1, 2, 4, 5, 6, 7, 8, 9];
