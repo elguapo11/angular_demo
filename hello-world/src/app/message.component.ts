@@ -13,8 +13,10 @@ export class MessageComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.messageToShow = 'This is the delayed message!';
-      this.fetch = 'This is the second message';
-    }, 3000); // 1000 milliseconds = 1 second
+      this.messageToShow = 'This is the delayed message after 2 seconds!';
+    }, 2000); // 1000 milliseconds = 1 second
+    setTimeout(() => {
+      this.fetch = 'This will show up after 4 seconds';
+    }, 4000);
   }
 }
