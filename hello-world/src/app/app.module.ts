@@ -3,13 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Fetch } from './fetch.component';
 import { MessageComponent } from './message.component';
 
 @NgModule({
-  declarations: [AppComponent, Fetch, MessageComponent],
+  declarations: [AppComponent, MessageComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent, Fetch, MessageComponent],
+  bootstrap: [AppComponent, MessageComponent],
 })
 export class AppModule {}
